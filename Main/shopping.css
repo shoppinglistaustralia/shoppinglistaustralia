@@ -1,0 +1,260 @@
+
+body {
+   background-image: linear-gradient(to bottom right, #f9eed2, #ae0d7a);
+   margin:0;
+}
+
+header h1 {
+   color: #410b2f;
+   font-family: papyrus;
+   padding: 2vh;
+   font-weight: bold;
+   display: inline-block;
+}
+
+h2 {
+   color: #410b2f;
+   text-align: center;
+   font-family: papyrus;
+   margin-top: 1vw;
+   padding-top: 2vh;
+   font-weight: bold;
+   display: inline-block;
+}
+
+/* navigation */
+.nav-just {
+  margin-bottom: 3vh;
+  overflow: hidden;
+  background-color: #333;
+  font-family: sans-serif;
+  justify-content: space-between;
+}
+
+.nav-just a {
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw;  
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-just a:hover {
+   background-color: #ae0d7a;
+   color: #d4f7ec;bac
+}
+
+.nav-just a.active {
+   background-color: #d4f7ec;
+   color: #ae0d7a;
+   border: 1px solid black;
+}
+
+@media only screen and (min-width:300px) {
+
+.navbar-toggler {
+  position: relative;
+  float: right;
+  margin-right: 2.5vw;
+  margin-top: 5vh;
+  display: inline;
+}
+
+.nav-just {
+  display: none;
+} 
+
+.nav-just.responsive {position: relative;}
+
+.nav-just.responsive .navbar-toggler {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.nav-just.responsive{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+.nav-just.responsive a {
+   float: none;
+   display: block;
+   text-align: center; 
+}    
+}
+
+@media only screen and (min-width:600px) {
+
+.navbar-toggler {
+  display: none;
+} 
+
+.nav-just a {
+   display: inline-block; 
+}
+
+.nav-just {
+  display: block;
+  overflow: hidden;
+  justify-content: space-between;
+} 
+}
+
+* {box-sizing:border-box}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 40vh;
+  position: relative;
+  background-color: black;
+  margin: auto;
+}
+
+.mySlides {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-top: 0.2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot-section {
+   position: absolute;
+   left: 38%;
+   top: 85%; 
+}
+
+.btn-left {
+   color: white;
+   background-color: black;
+   position: absolute;
+   top: 44%;  
+   margin-bottom: 25vh; 
+   left: 3vw;
+   
+} 
+
+.btn-rght {
+   color: white;
+   background-color: black;
+   position: absolute;
+   top: 44%;
+   margin-bottom: 25vh;
+   left: 91vw;
+   
+} 
+
+.dot {  
+  position: relative;
+  height: 15px;
+  width: 25px;
+  margin: 10px;
+  left: 45%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.major {
+   color: #aeod7a;
+   display: block;
+   position: relative;
+   margin-top: 2vw;
+   text-align: center;
+   padding: 1vw 1vh;
+}
+
+/* form */
+.form2  {
+   float: center;
+   margin: 3vh;
+   position: relative;
+}
+
+.form-control {
+   display: inline-block;
+   position: relative;
+   margin-top: 2vh;
+   background-color: #d4f7ec; 
+   font-size: 16px;
+   padding: 0.5vw; 
+   border: 1px solid #ae0d7a;
+   border-radius: 7px;
+   width: 40vw;
+   margin-left: 24%;    
+   float: left; 
+}
+
+.btn-primary {
+   display: inline-block;
+   background-color: #410b2f;
+   color: #f9eed2;
+   padding: 0.6vw;
+   position: relative;
+   margin-top: 2vh; 
+   /*margin: auto; */
+   border-radius: 7px;
+   text-align: center;
+   text-decoration: none;
+   border: 1px solid #ae0d7a;
+   width:10vw;
+   float: left;
+}
+
+.major2 {
+   color: #aeod7a;
+   display: block;
+   position: relative;
+   margin-top: 2vw;
+   text-align: center;
+   padding: 1vw 1vh;
+}
+
+/* rest of text */
+.photos {
+  border: 1px solid #ae0d7a; 
+  background-color: black; 
+  padding: 0.2vw;
+}
+
+.photo {
+  width: 24.6%; 
+  padding: 0.2vw;
+  border: 1px solid #ae0d7a;
+  margin: auto;
+}
+
+footer {
+   text-align: center;
+   color: #d4f7ec;
+   padding-top: 2vw;
+   padding-bottom: 2vw;
+   margin-top: 2vw;
+   background-color: #340926;
+}
+
